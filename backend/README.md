@@ -2,7 +2,7 @@
 
 This is the backend technical challenge for candidates applying for an engineering role at Assetz Capital.
 
-Please also read the [guidance](../#guidance) and instructions for [submitting your task](../#submitting-your-task).
+Please also read the [guidance](../##guidance) and instructions for [submitting your task](../##submitting-your-task).
 
 ## Task
 

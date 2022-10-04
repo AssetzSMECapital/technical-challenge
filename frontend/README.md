@@ -2,19 +2,21 @@
 
 This is the frontend technical challenge for candidates applying for an engineering role at Assetz Capital.
 
-Please also read the [guidance](../#guidance) and instructions for [submitting your task](../#submitting-your-task).
+Please also read the [guidance](../##guidance) and instructions for [submitting your task](../##submitting-your-task).
 
 
 ## Task
 
 Write an application in TypeScript using your frontend framework of choice that:
-* Fetches and displays [investor holdings](https://raw.githubusercontent.com/AssetzSMECapital/technical-challenge/master/data/holdings.json)
-* Add a responsive functionality for the layout, which will display one column on mobile
+1. Fetches and displays [investor holdings](https://raw.githubusercontent.com/AssetzSMECapital/technical-challenge/master/data/holdings.json)
+2. Add a responsive functionality for the layout, which will display one column on mobile
   devices, two columns on tablet devices, and three columns on desktops.
-* Allow for the user to search by `investorName` and/or filter by `investmentAccount`
-* Add a modal that also displays the investor name, and account rate for the holding
-* Add a button so that the data can be sorted by balance ascending, or descending
-* Shows the total balance for any rows being displayed
+3. Add a modal that also displays the investor name, and account rate for the holding
+4. Allow for the user to search by `investorName` and/or filter by `investmentAccount`
+5. Add a button so that the data can be sorted by balance ascending, or descending
+   1. we expect filters from point 4 to continue to work with the sorting functionality.
+6. Add a button so that any sorting applied can be removed.
+7. Add a button to display the total balance of the current investors displayed.
 
 Don't worry about making a dazzling interface, basic aesthetics are welcome, but we're not assessing your design skills.
 

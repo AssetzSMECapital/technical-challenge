@@ -12,6 +12,14 @@
 
 
 
+### Q. Which part of the test was the most difficult one? And why?
+
+
+
+### Q. Has your code followed SOLID principles? Which SOLID principles and where exactly in the code? 
+
+
+
 ### Q. If a stakeholder was present, what questions might you ask them?
 
 
