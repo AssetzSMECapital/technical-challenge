@@ -21,12 +21,12 @@ Write a frontend application in TypeScript that Fetches and displays
 5. Having a BoE (Bank of England) rate input field that should be applied on top of the investment account rate. Default BoE rate should be 2.25%
 
 
-|                                   | ${investmentAccount} (${annualRate}%) | ... | Investor Total [^1]. | Investor Annual Interest Due [^2]. |
-|-----------------------------------|---------------------------------------|-----|----------------------|------------------------------------|
-| ${investor.name}                  | ${holding.amount}                     |     | £                    | £                                  |
-| ...                               |                                       |     |                      |                                    |
-| Account Total [^3].               | £                                     |     | £                    | £                                  |
-| Account Annual Interest Due [^4]. | £                                     |     | £                    | -                                  |
+|                                  | ${investmentAccount} (${annualRate}%) | ... | Investor Total [^1] | Investor Annual Interest Due [^2] |
+|----------------------------------|---------------------------------------|-----|---------------------|-----------------------------------|
+| ${investor.name}                 | ${holding.amount}                     |     | £                   | £                                 |
+| ...                              |                                       |     |                     |                                   |
+| Account Total [^3]               | £                                     |     | £                   | £                                 |
+| Account Annual Interest Due [^4] | £                                     |     | £                   | -                                 |
 
 [^1]:`Investor Total` = Sum of all holdings for each Investor
 
