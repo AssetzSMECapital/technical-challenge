@@ -7,16 +7,35 @@ Please also read the [guidance](../README.md#guidance) and instructions for [sub
 
 ## Task
 
-Write an application in TypeScript using your frontend framework of choice that:
-1. Fetches and displays [investor holdings](https://raw.githubusercontent.com/AssetzSMECapital/technical-challenge/master/data/holdings.json)
-2. Add a responsive functionality for the layout, which will display one column on mobile
-  devices, two columns on tablet devices, and three columns on desktops.
-3. Add a modal that also displays the investor name, and account rate for the holding
-4. Allow for the user to search by `investorName` and/or filter by `investmentAccount`
-5. Add a button so that the data can be sorted by balance ascending, or descending
-   1. we expect filters from point 4 to continue to work with the sorting functionality.
-6. Add a button so that any sorting applied can be removed.
-7. Add a button to display the total balance of the current investors displayed.
+Write a frontend application in TypeScript that Fetches and displays
+[investor holdings](https://raw.githubusercontent.com/AssetzSMECapital/technical-challenge/master/data/holdings.json) while:
+1. Having a responsive layout.
+2. Having the following filters:
+   1. Investor `riskLevel` range filter (min/max value)
+   2. Investor holdings `Total` range filter (min/max value)
+3. Having the following sorting:
+   1. Can sort asc/desc by `Annual Interest Due`
+   2. Can sort asc/desc by `Total`
+   3. Can reset sorting
+   4. We expect filters and sorting to be compatible with one another.
+5. Having a BoE (Bank of England) rate input field that should be applied on top of the investment account rate. Default BoE rate should be 2.25%
+
+
+|                                 | ${investmentAccount} (${annualRate}%) | ... | Investor Total[^1]  | Investor Annual Interest Due[^2]  |
+|---------------------------------|---------------------------------------|-----|---------------------|-----------------------------------|
+| ${investor.name}                | ${holding.amount}                     |     | £                   | £                                 |
+| ...                             |                                       |     |                     |                                   |
+| Account Total[^3]               | £                                     |     | £                   | £                                 |
+| Account Annual Interest Due[^4] | £                                     |     | £                   | -                                 |
+
+[^1] `Investor Total` = Sum of all holdings for each Investor
+
+[^2] `Investor Annual Interest Due` = Yearly interest due to each investor based on their total holdings and interest rates (`annualRate` + `BoE`).
+
+[^3] `Account Total` = Sum of all holdings for each investment account type
+
+[^4] `Account Annual Interest Due` = Yearly interest due for each investment account type based on total holdings and interest rates (`annualRate` + `BoE`).
+
 
 Don't worry about making a dazzling interface, basic aesthetics are welcome, but we're not assessing your design skills.
 
@@ -30,6 +49,7 @@ https://raw.githubusercontent.com/AssetzSMECapital/technical-challenge/master/da
 And have the format:
 ```
 {
+    "id": number,
     "investorId": number,
     "investmentAccount": string,
     "balance": string
@@ -43,8 +63,9 @@ https://raw.githubusercontent.com/AssetzSMECapital/technical-challenge/master/da
 And have the format:
 ```
 {
-    "investorId": number,
-    "investorName": string
+    "id": number,
+    "name": string,
+    "riskLevel": number
 }
 ```
 
@@ -55,6 +76,7 @@ https://raw.githubusercontent.com/AssetzSMECapital/technical-challenge/master/da
 And have the format:
 ```
 {
+    "id": number,
     "investmentAccount": string, 
     "annualRate": number
 }
