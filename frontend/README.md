@@ -21,20 +21,20 @@ Write a frontend application in TypeScript that Fetches and displays
 5. Having a BoE (Bank of England) rate input field that should be applied on top of the investment account rate. Default BoE rate should be 2.25%
 
 
-|                                 | ${investmentAccount} (${annualRate}%) | ... | Investor Total [^1]. | Investor Annual Interest Due[^2]  |
-|---------------------------------|---------------------------------------|-----|----------------------|-----------------------------------|
-| ${investor.name}                | ${holding.amount}                     |     | £                    | £                                 |
-| ...                             |                                       |     |                      |                                   |
-| Account Total[^3]               | £                                     |     | £                    | £                                 |
-| Account Annual Interest Due[^4] | £                                     |     | £                    | -                                 |
+|                                   | ${investmentAccount} (${annualRate}%) | ... | Investor Total [^1]. | Investor Annual Interest Due [^2]. |
+|-----------------------------------|---------------------------------------|-----|----------------------|------------------------------------|
+| ${investor.name}                  | ${holding.amount}                     |     | £                    | £                                  |
+| ...                               |                                       |     |                      |                                    |
+| Account Total [^3].               | £                                     |     | £                    | £                                  |
+| Account Annual Interest Due [^4]. | £                                     |     | £                    | -                                  |
 
 [^1]:`Investor Total` = Sum of all holdings for each Investor
 
-[^2] `Investor Annual Interest Due` = Yearly interest due to each investor based on their total holdings and interest rates (`annualRate` + `BoE`).
+[^2]:`Investor Annual Interest Due` = Yearly interest due to each investor based on their total holdings and interest rates (`annualRate` + `BoE`).
 
-[^3] `Account Total` = Sum of all holdings for each investment account type
+[^3]:`Account Total` = Sum of all holdings for each investment account type
 
-[^4] `Account Annual Interest Due` = Yearly interest due for each investment account type based on total holdings and interest rates (`annualRate` + `BoE`).
+[^4]:`Account Annual Interest Due` = Yearly interest due for each investment account type based on total holdings and interest rates (`annualRate` + `BoE`).
 
 
 Don't worry about making a dazzling interface, basic aesthetics are welcome, but we're not assessing your design skills.
