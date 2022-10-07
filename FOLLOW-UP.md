@@ -12,11 +12,7 @@
 
 
 
-### Q. Which part of the test was the most difficult one? And why?
-
-
-
-### Q. Has your code followed SOLID principles? Which SOLID principles and where exactly in the code? 
+### Q. Which part of the challenge did you find most difficult? And why?
 
 
 
