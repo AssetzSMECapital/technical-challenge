@@ -28,7 +28,7 @@ Write a frontend application in TypeScript that Fetches and displays
 | Account Total [^3]               | £                                         |     | £                   | £                                 |
 | Account Annual Interest Due [^4] | £                                         |     | £                   | -                                 |
 
-[^1]:`Investor Total` = Sum of all holdings for each Investor
+[^1]:`Investor Total` = Sum of all holdings for each investor
 
 [^2]:`Investor Annual Interest Due` = Yearly interest due to each investor based on their total holdings and interest rates (`annualRate` + `BoE`).
 
