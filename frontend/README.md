@@ -7,7 +7,7 @@ Please also read the [guidance](../README.md#guidance) and instructions for [sub
 
 ## Task
 
-Write a frontend application in TypeScript that Fetches and displays
+Write a frontend application in TypeScript that fetches (via a HTTP request) and displays
 [investor holdings](https://raw.githubusercontent.com/AssetzSMECapital/technical-challenge/master/data/holdings.json) while:
 1. Having a responsive layout.
 2. Having the following filters:
@@ -18,15 +18,16 @@ Write a frontend application in TypeScript that Fetches and displays
    2. Can sort asc/desc by `Investor Annual Interest Due`
    3. Can reset sorting
    4. We expect filters and sorting to be compatible with one another.
-5. Having a BoE (Bank of England) rate input field that should be applied on top of the investment account rate. Default BoE rate should be 2.25%
+4. Having a BoE (Bank of England) rate input field that should be applied on top of the investment account rate. Default BoE rate should be 2.25%
+5. The layout should be in a table, as per the below example:
 
 
-|                                  | `${investmentAccount} (${annualRate}%)`   | ... | Investor Total [^1] | Investor Annual Interest Due [^2] |
-|----------------------------------|-------------------------------------------|-----|---------------------|-----------------------------------|
-| `${investor.name}`               | `${holding.balance}`                      |     | £                   | £                                 |
-| ...                              |                                           |     |                     |                                   |
-| Account Total [^3]               | £                                         |     | £                   | £                                 |
-| Account Annual Interest Due [^4] | £                                         |     | £                   | -                                 |
+|                                  | `${investmentAccount} (${annualRate}%)`   | ... (remaining accounts) | Investor Total [^1] | Investor Annual Interest Due [^2] |
+|----------------------------------|-------------------------------------------|--------------------------|---------------------|-----------------------------------|
+| `${investor.name}`               | `${holding.balance}`                      |                          | £                   | £                                 |
+| ... (remaining investors)        |                                           |                          |                     |                                   |
+| Account Total [^3]               | £                                         |                          | £                   | £                                 |
+| Account Annual Interest Due [^4] | £                                         |                          | £                   | -                                 |
 
 [^1]:`Investor Total` = Sum of all holdings for each investor
 
