@@ -11,13 +11,13 @@ Write a frontend application in TypeScript that fetches (via a HTTP request) and
 [investor holdings](https://raw.githubusercontent.com/AssetzSMECapital/technical-challenge/master/data/holdings.json) while:
 1. Having a responsive layout.
 2. Having the following filters:
-   1. Investor `riskLevel` range filter (min/max value)
-   2. Investor holdings `Investor Total` range filter (min/max value)
+   - Investor `riskLevel` range filter (min/max value)
+   - Investor holdings `Investor Total` range filter (min/max value)
 3. Having the following sorting:
-   1. Can sort asc/desc by `Investor Total`
-   2. Can sort asc/desc by `Investor Annual Interest Due`
-   3. Can reset sorting
-   4. We expect filters and sorting to be compatible with one another.
+   - Can sort asc/desc by `Investor Total`
+   - Can sort asc/desc by `Investor Annual Interest Due`
+   - Can reset sorting
+   - We expect filters and sorting to be compatible with one another.
 4. Having a BoE (Bank of England) rate input field that should be applied on top of the investment account rate. Default BoE rate should be 2.25%
 5. The layout should be in a table, as per the below example:
 
